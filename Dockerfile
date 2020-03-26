@@ -8,6 +8,7 @@ RUN apt-get -y upgrade
 RUN apt-get -y install python3
 RUN apt-get -y install python3-pip
 RUN apt-get -y install nano
+RUN apt-get -y install wget
 
 # create user directory
 RUN mkdir /home/user
