@@ -39,7 +39,7 @@ RUN pip3 install dash_bootstrap_components
 RUN wget https://github.com/gitificial/FLIRtoDash/archive/master.zip
 RUN unzip master.zip
 RUN rm master.zip
-RUN cd FLIRtoDash
+RUN cd FLIRtoDash-master
 RUN python3 flirToDash.py
 
 
