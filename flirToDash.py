@@ -323,7 +323,7 @@ def update_heatmap(x_range_values, y_range_values, temp_range_values, data):
     delta_min_max = np.round(max_val - min_val, decimals = 3)
     stddev = np.round(np.nanstd(na), decimals = 1)
     
-    cv = np.round(stddev / mean_val, decimals = 1)
+    cv = np.round(stddev / mean_val, decimals = 1) * 100
     
     x_left = x_range_values[1]
     x_right = x_range_values[0]
@@ -354,4 +354,5 @@ if __name__ == '__main__':
     # app.run_server(debug=False)
     
     # app.run_server(debug=True, host='0.0.0.0')
-    app.run_server(debug=False, host='0.0.0.0')
+    # app.run_server(debug=False, host='0.0.0.0')
+    app.run_server(debug=False, host='0.0.0.0', port=80)
