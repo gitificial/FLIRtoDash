@@ -5,7 +5,7 @@
 
 
 ## Installation
-The following instructions describe 3 installation options on a linux system and might deviate to the installation on Windows/macOS.
+The following instructions describe two installation options on a linux system and might deviate to the installation on Windows/macOS.
 
 ### Option 1: Install the Docker image containing the webapp
 Get the Docker image from Docker Hub:
@@ -57,9 +57,9 @@ unzip master.zip
 ```
 8. Add a new cronjob to start the webapp at boot time. Open the cronjob file with the command "crontab -e" and add following line to the very end:
 ```bash
-@reboot tmux new-session -d -s "flirSession" /home/<your username>/flir/FLIRtoDash-master/flir_start.sh
+@reboot tmux new-session -d -s "flirSession" $HOME/flir/FLIRtoDash-master/flir_start.sh
 ```
-7. Reboot the system. The webapp is now reachable on http://UBUNTU_SERVER_IP:8050
+9. Reboot the system. The webapp is now reachable on http://UBUNTU_SERVER_IP:8050
 
 
 ### Files overview:
