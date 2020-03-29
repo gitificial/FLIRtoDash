@@ -1,7 +1,7 @@
 # FLIRtoDash
 Dash webapp to get some statistics from pixel values of an image (saved as CSV). The statistics are calculated over a selected region of interest (ROI). The app was intended to get some statistics from thermographic images from a FLIR camera, but can be used for other types of images as well.
 
-
+![FLIRtoDash screenshot](https://github.com/gitificial/FLIRtoDash/blob/master/screenshot.png)
 
 
 ## Installation
