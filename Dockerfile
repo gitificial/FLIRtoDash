@@ -20,6 +20,10 @@ RUN chown -R user:user /home/user
 # set user password to password123
 RUN echo "user:password123"|chpasswd
 
+# container listens on port 80/tcp
+# EXPOSE 80/tcp
+EXPOSE 8050/tcp
+
 # tell docker that all future commands should run as the appuser user
 USER user
 
@@ -39,9 +43,11 @@ RUN pip3 install dash_bootstrap_components
 RUN wget https://github.com/gitificial/FLIRtoDash/archive/master.zip
 RUN unzip master.zip
 RUN rm master.zip
-RUN cd FLIRtoDash-master
+# RUN cd FLIRtoDash-master
+WORKDIR /home/user/FLIRtoDash-master
 # RUN python3 flirToDash.py
-
+# ENTRYPOINT ["python3", "flirToDash.py"]
+CMD [ "python3", "flirToDash.py" ]
 
 
 
