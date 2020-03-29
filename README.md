@@ -18,7 +18,7 @@ sudo docker network create --subnet 172.20.0.0/24 multi-host-network
 ```
 Create and run a container. The container is attached to the network with the IP 172.20.0.2:
 ```bash
-sudo docker run -itd --network=multi-host-network --ip 172.20.0.2 ubuntu_image
+sudo docker run -itd --network=multi-host-network --ip 172.20.0.2 dockificial/ubuntu_flirtodash:latest
 ```
 The webapp is now reachable with a browser through http://172.20.0.2:8050 .
 
