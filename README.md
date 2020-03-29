@@ -55,7 +55,7 @@ cd flir
 wget https://github.com/gitificial/FLIRtoDash/archive/master.zip
 unzip master.zip
 ```
-8. Add a new cronjob to start the webapp at boot time. Open the cronjob file with the command "crontab -e" and add following line to the very end:
+8. Add a new cronjob to start the webapp at boot time. Open the cronjob file with the command "crontab -e" and add following line to the very end and save it (Ctrl-d Y):
 ```bash
 @reboot tmux new-session -d -s "flirSession" $HOME/flir/FLIRtoDash-master/flir_start.sh
 ```
@@ -65,6 +65,7 @@ unzip master.zip
 ### Files overview:
 **flirToDash.py** - Dash webapp<br/>
 **Dockerfile** - Dockerfile to create a Ubuntu Docker image with the webapp<br/>
+**flir_start.sh** - Script to start webapp at boot time.<br/>
 **example.csv** - Thermographic image as CSV. Each table cell contains the temperature of it's corresponding pixel.
 
 
