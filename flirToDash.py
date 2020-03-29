@@ -323,7 +323,7 @@ def update_heatmap(x_range_values, y_range_values, temp_range_values, data):
     delta_min_max = np.round(max_val - min_val, decimals = 3)
     stddev = np.round(np.nanstd(na), decimals = 1)
     
-    cv = np.round(stddev / mean_val, decimals = 1) * 100
+    cv = np.round(stddev / mean_val, decimals = 2) * 100
     
     x_left = x_range_values[1]
     x_right = x_range_values[0]
