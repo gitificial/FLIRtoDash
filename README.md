@@ -24,8 +24,8 @@ The webapp is now reachable with a browser through http://172.20.0.2:8050 .
 
 ### ...
 
-Files overview:
-**flirToDash.py** - Dash webapp
-**Dockerfile** - Dockerfile to create a Ubuntu Docker image with the webapp
+Files overview:<br/>
+**flirToDash.py** - Dash webapp<br/>
+**Dockerfile** - Dockerfile to create a Ubuntu Docker image with the webapp<br/>
 
 
